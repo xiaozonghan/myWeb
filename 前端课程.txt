@@ -1,0 +1,42 @@
+1.html5+css3  http://study.163.com/course/courseMain.htm?courseId=1003005
+2.js          http://study.163.com/course/courseMain.htm?courseId=252008
+3.jq	    http://study.163.com/course/courseMain.htm?courseId=501006
+4.jq ul       http://study.163.com/course/courseMain.htm?courseId=943002
+5.bootstrap   http://study.163.com/course/courseMain.htm?courseId=1017002
+6.gulp        http://study.163.com/course/courseMain.htm?courseId=1649006
+7.an          http://study.163.com/course/courseMain.htm?courseId=1003417001
+8.node.js     http://study.163.com/course/courseMain.htm?courseId=1003228034
+9.vue         http://study.163.com/course/introduction/1003291032.htm#/courseDetail
+
+学习加复习1，2，学习3.4.5
+1.面试题库
+2.ife
+3.百度云学习视频
+4.fcc
+5.书本
+6.less,sass,typescript,
+
+
+ 10. 项目  http://web.tanzhouedu.com/forum-2-1.html
+
+11.  技术宅   http://www.caogen8.co/?fromuid=10536&__SAKURA=1b706c01feb6e5d0b0ec3b2b1d913c44d1490087723_7219
+
+12.技术宅   https://www.0513c.com/
+
+13. 技术宅  https://www.gn00.com/
+
+14.腾讯课堂  https://ke.qq.com/user/index/index.html#cid=173486&term_id=100203252
+
+15.极客 http://ke.jikexueyuan.com/zhiye/web/#m100
+
+16.黑马云 http://yun.itheima.com/map/50.html
+
+17.千峰 http://bbs.mobiletrain.org/forum-154-1.html
+
+18.豪情博客 http://www.cnblogs.com/jikey/p/3600308.html
+
+19 妙味  http://2017.miaov.com/
+
+20 学习资料集合  http://www.cnblogs.com/bingyun84/p/4319353.html
+
+21 我的博客  http://www.cnblogs.com/xiaozonghan/

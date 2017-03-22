@@ -1,0 +1,44 @@
+
+/*body{
+	width:600px;
+	background-color:red;
+	全屏，这里有冲突
+	border:1px solid black;
+}*/
+
+
+div{
+	/*width:60%;*/
+	width:auto;
+	height:auto;
+	/*设置auto位自适应*/
+	padding-top:30px;
+	margin-left:10px;
+	/*height: 200px;*/
+	background-color:silver;
+	/*width:;*/
+	/*宽度可以设置px，%，auto，相对的是父级的*/
+	/*height:200px;*/
+	/*高度在设置%时要注意，父级可能本来是被子级撑开*/
+	/*min-width:100px;
+	min-height:100px;
+	max-width: 300px;
+	max-height:300px;*/
+	/*宽度尽可能max，高度去min*/
+
+/*	width:200px;
+	width:100px;
+	width:30%;
+	后面会将前面覆盖*/
+
+/*关于溢出*/
+/*overflow-x或者overflow-y代表横纵两个方向*/
+
+overflow:hidden;
+overflow:visible;
+overflow:auto;
+/*溢出出现滚动条，没有正常显示*/
+
+overflow:scroll;
+/*不管溢不溢出都出现滚动条*/
+}
