@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var pox = document.getElementById("div1");
+			//返回的是字符串
+			// alert(typeof pox.id);
+			// alert(pox.title);
+
+			//这里要用className
+			// alert(pox.className);
+
+			//style将返回一个对象
+			// alert(typeof pox.style);
+
+			// alert(typeof pox.style.color);
+			// alert(typeof pox.tagName);
+			// alert( pox.tagName);返回DIV
+
+			//修改样式
+			// pox.style.color = "blue";
+
+			//将显示pox里面所有内容
+			// alert(pox.innerHTML);
+			
+			//对于自定义的属性，最好不要有，现在都已经不兼容了
+		}
+	</script>
+</head>
+<body>
+	<div id="div1" title="ge" class="box" style="color:red; font-size:25px;"><b>html</b></div>
+	<div id="div2">javascript</div>
+	<div id="div3">css</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var box = document.getElementById("div1");
+			var pox = box.childNodes;
+
+			function getNodes3(node){
+				for(var i = 0;i<node.childNodes.length;i++){
+					if(node.childNodes[i].nodeType==3 && /^\s+$/.test(node.childNodes[i].nodeValue)){
+						node.removeChild(node.childNodes[i]);
+					}
+				
+				}
+				return node;
+			}
+			var cox = getNodes3(box);
+			// alert(cox.length);
+			// getNodes3(box);
+			// alert(getNodes3(box).firstChild.nodeName)
+			alert(cox.childNodes.length)
+
+
+
+			// alert(pox.length);//返回7
+
+			// var kox = getNodes(pox);
+			// alert(kox.length);
+
+			
+
+
+			// function getNodes(nodes){
+			// 	for(var i=0;i<nodes.length;i++){
+			// 		if(nodes[i].nodeType===3 && /^\s+$/.test(nodes[i].nodeValue)){
+			// 		nodes[i].parentNode.removeChild(nodes[i]);
+			// 		}
+			// 	}
+				
+			//  // return nodes;	
+			// }
+
+
+
+
+			// getNodes(box.childNodes);
+			// alert(pox[0].nodeName);
+			//去除空白节点
+			// function getNodes(nodes){
+			// 	var arr=[];
+			// 	for(var i=0;i<nodes.length;i++){
+			// 		if(nodes[i].nodeType===3 && /^\s+$/.test(nodes[i].nodeValue)){
+			// 			continue;
+			// 		}else{
+			// 			arr.push(nodes[i]);
+			// 		}
+			// 	}
+			// 	return arr;
+			// }
+
+
+
+			// 还有一个方法直接传对象，但是感觉没必要
+
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<em>hello</em>
+		<em>hello</em>
+		<em>hello</em>
+	</div>
+</body>
+</html>

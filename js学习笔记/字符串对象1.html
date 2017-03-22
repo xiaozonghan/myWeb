@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var a = "abc";
+		var ss = new String("abc");
+		// alert(a);//abc
+		// alert(ss);//abc
+
+		// alert(typeof a);//string
+		// alert(typeof ss);//object
+
+		// alert(a==ss);//ture
+
+		// alert("undedined"==undefined);//false
+
+
+		// 因为基本类型的字符串可以使用对象字符串的所有属性与方法，所以创建字符串对象没那么必要
+		// alert(a.length);//3
+		// alert(ss.length);//3
+
+		// 两者之间的区别
+		ss.test = "hah";
+		a.test = "heh";
+		// alert(ss.test);//hah
+		// alert(a.test);//undefined
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

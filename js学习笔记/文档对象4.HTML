@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var arr = document.getElementById("div1");
+			// alert(arr.nodeName);返回DIV与tagName属性相同
+			// alert(arr.nodeType);返回1
+			// alert(arr.nodeValue);返回null指的就是一对标签而已
+			// alert(arr.innerHTML);返回jsa<b>dsd</b>ada文档也有效果
+
+			var pox = arr.childNodes;
+			// alert(pox.length);返回3
+			// alert(pox) 返回[object NodeList]
+			// alert(typeof pox);返回object
+			// alert(pox[0]);返回[object Text]
+			// alert(typeof pox[0]);返回object
+			// alert(pox[1]);返回[object HTMLElement]
+
+			// alert(typeof pox[0].nodeValue);返回字符串
+			// alert(pox[0].innerHTML);返回undefined，文本节点没有这个属性
+
+			// pox[0].nodeValue = "<em>大家好</em>"文档变成<em>大家好</em>dsd ada；大家好也没效果，这里面就是一个字符串
+
+			arr.innerHTML = "<em>大家好</em>";//文档有效果；只显示斜体大家好，这里就是一个元素节点了
+			// alert(pox[0]);返回[object HTMLElement]说明已经改变了都是改变源代码的
+
+		}
+	</script>
+</head>
+<body>
+	<div id = "div1">
+		jsa
+		<b>dsd</b>
+		ada
+	</div>
+</body>
+</html>

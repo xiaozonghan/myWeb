@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var a = function(){
+		// 	var name = "hha";
+		// 	function box(){
+		// 		return "wooo";
+		// 	}
+		// 	return {
+		// 		go:function(){
+		// 			return name + box();
+		// 		}
+		// 	}
+		// }()
+		// alert(a.go());
+		// 如果块级作用域赋值变量。可以去掉括号
+
+
+		function Test(){}
+		var cc = function(){
+			var name = "jaj";
+			function ss(){
+				return "sssss";
+			}
+			var t = new Test();
+			t.go = function (){
+				return name + ss();
+			}
+			return t;
+		}();
+		alert(cc.go());
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

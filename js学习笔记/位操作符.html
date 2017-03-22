@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//一个负数的二进制编码，正数编码的反码加1
+
+		//位操作符如果操作不是数字类型的先用Number()转型，NaN，undefined Infinity会转型为0
+
+		//无符号右移，连符号也一起移动,所有一起移动，右边空缺用0补充
+		// var c = -123>>>5;
+		// alert(c);
+
+		//有符号位移，前31位移动，空缺符号位补充；
+		// var m = -123>>5;
+		// alert(m);
+
+		//左移，空缺0补充,符号位不动
+		// var q=-123<<5;
+		// alert(q);
+
+		//位~,取相反数减一
+		// var num1 = ~ -123;
+		// alert(num1);返回122
+
+		//位&，二进制都是1结果是1
+		// var m = 23;
+		// alert(m.toString(2)); 返回10111
+
+		//这个做法没效果
+		// alert(23.toString(2));
+
+		//位|，有一个1就是1
+		// var p = 23 | 809;
+		// alert(p);返回831
+		// alert(typeof p) 返回number
+		// alert(p.toString(2));返回1100111111
+
+		//位^，不同为1，相同为0
+		// var l = 23 ^ 132;
+		// alert(l); 返回147
+
+
+	</script>
+</body>
+</html>

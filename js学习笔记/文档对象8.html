@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var box = document.getElementById("div1");
+			var p = document.createElement("p");
+			box.appendChild(p);
+			var text = document.createTextNode("大家好");
+			p.appendChild(text);
+			var a = document.createElement("a");
+			box.parentNode.insertBefore(a,box);
+
+			//创建一个insertAfter()函数
+			function insertAfter(newElement,targetElement){
+				var pox = targetElement.parentNode;
+				if(pox.lastChild == targetElement){
+					pox.appendChild(newElement);
+				}else{
+					var kox = targetElement.nextSibling;
+					pox.insertBefore(newElement,kox);
+				}
+			}
+			var span = document.createElement("span");
+			insertAfter(span,box);
+
+
+
+
+
+		}
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+		你好
+	</div>
+</body>
+</html>

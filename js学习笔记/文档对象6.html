@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var box = document.getElementById("div1");
+				// alert(box.firstChild.nextSibling);返回[object HTMLElement]
+				// var kox = box.lastChild.previousSibling;
+				// alert(kox);
+				// alert(box.parentNode);[object HTMLBodyElement]
+				//alert(box.firstChild);//[object Text]
+
+				var vox  = box.attributes;
+				// alert(vox);[object NamedNodeMap]
+				// alert(vox.length);
+				// alert(vox[2]);[object Attr]
+				// alert(vox[0])[object Attr]
+				// alert(vox[2].nodeValue);color:red
+				// alert(vox[2].color);undefined
+				// alert(vox[0].nodeName);这里并没有倒序
+				
+				// alert(vox["style"].nodeName);返回style
+
+				// alert(box.style);[object CSS2Properties]
+				// alert(box.style.color);red
+
+
+
+
+
+
+			// alert(box);返回[object HTMLDivElement]
+
+			// alert(box.firstChild.nodeValue);
+			// alert(box.lastChild.nodeValue);
+			// var arr = box.childNodes;
+			// alert(arr[0].nodeValue);
+			// alert(arr[arr.length-1].nodeValue);
+
+			var pox = box.ownerDocument;
+			//返回的就是整个文档对象
+			// alert(pox.nadeName)返回未定义
+			// alert(pox.nodeValue);返回null
+			// alert(pox.nodeType)返回9
+			// alert(pox);返回[object HTMLDocument]
+			// var pox1 = pox.childNodes;返回2
+			// alert(pox1[0].nodeType);返回10
+		}
+	</script>
+</head>
+<body>
+	<div id = "div1" class = "haha" style = "color:red">
+		你好
+		<b>我好</b>
+		大家好
+	</div>
+</body>
+</html>

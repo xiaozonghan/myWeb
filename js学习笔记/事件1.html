@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// function box(){
+		// 	alert("nihao");
+		// }
+
+		// 如果这样使用
+		// window.onload = function(){
+		// 	function box(){
+		// 		// alert("nihao");这是无效的，事件访问不到box函数
+		// 	}
+		// }	
+
+
+		// window.onload = function(){
+		// 	var input = document.getElementsByTagName("input")[0];
+		// 	input.onclick = function(){
+		// 		alert("mmm");
+		// 	}
+		// }
+
+
+
+		// window.onload = function(){
+		// 	var input = document.getElementsByTagName("input")[0];
+		// 	input.onmouseup = box;//这里不能使用括弧
+
+		// }
+		// function box(){
+		// 	alert("hahah");
+		// }
+
+
+		window.onunload = function(){
+			alert("nihao1");
+		};
+
+	</script>
+</head>
+<body>
+
+	<!-- <input type="button" value="anniu" onclick="alert('nihao');"> -->
+
+	<!-- 当语句比较多时可以创建一个函数 -->
+
+	<!-- <input type="button" value="anniu" onclick="box()"> -->
+
+	<!-- 分离则需要使用脚本 -->
+	<input type="button" value="hehh">
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// var obj ={
+		// 	name : "zhansi",
+		// 	age : 12,
+		// 	fun : function(){
+		// 		alert("xcao")
+		// 	}
+		// };
+		// alert(obj["name"]);
+		// obj.fun();
+		function box(obj){
+			var c = obj.a;
+			obj.a=obj.b;
+			obj.b = c;
+		}
+		// var x;
+		// alert(x);
+		var obj1={
+			a:5,
+			b:0
+		};
+		box(obj1);
+		alert(obj1.a);
+		alert(obj1.b);
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//对象冒充
+		// function Test(age){
+		// 	this.age=age;
+		// 	this.family = ["geg","jioeji"];
+
+		// }
+		// function Box(age){
+		// 	Test.call(this,age);
+		// }
+		//box可以继承test，而且解决了2个问题
+		//传参数与应用类型都是共享
+
+
+		// 组合继承
+		// function Test(name,age){
+		// 	this.name = name;
+		// 	this.age = age;
+		// 	this.family = [1,3,5]
+		// }
+		// Test.prototype.fun = function(){
+		// 	return this.name + this.age;
+		// }
+		// function Box(name,age){
+		// 	Test.call(this,name,age);
+		// }//可以用对象冒充修改原构造函数的缺点
+		// Box.prototype =new Test();//可以使用Test原型
+		// var b1 = new Box("xixi",13);
+		// alert(b1.fun()); 
+		// alert(b1.family);
+		// b1.family.push("xixixi")
+		// alert(b1.family);
+		// var b2 = new Box("ss",45);
+		// alert(b2.fun());
+		// alert(b2.family);
+
+
+
+
+		// 原型式继承
+		function getObj(o){
+			function F(){}
+			F.prototype = o;
+			return new F();
+		}
+		var box = {
+			name:"ss",
+			age:12,
+			family:[12,43,123,34,1]
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function Box(name){
+			this.name = name;
+		}
+		function Pox(age){
+			this.age = age;
+		}
+		Pox.prototype = new Box("heh");
+		var pox = new Pox(100);
+		alert(pox.name);
+		alert(pox.age);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

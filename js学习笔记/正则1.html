@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//实现对qq的验证功能，要求全是数字，第一个不是0,5到15位
+		// var qq = "013143012552343242";
+		// if(qq.length<=15 && qq.length>=5){
+		// 	if(qq.charAt(0)!=0){
+		// 		if(!isNaN(qq)){
+		// 			alert("合法QQ");
+		// 		}else{
+		// 			alert("不全是数字");
+		// 		}
+		// 	}else{
+		// 		alert("首字母不能为0")
+		// 	}
+		// }else{
+		// 	alert("长度不合适");
+		// } 
+		var qq = "342q0123124";
+		var reg = /^[1-9][0-9]{4,14}$/;
+		alert(reg.test(qq));	
+
+	</script>
+	
+
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var div = document.getElementById("div1");
+			var body = div.parentNode;
+
+			// var em = document.createElement("em");
+			// body.replaceChild(em,div);
+
+			// alert(div.childNodes.length);//7
+
+			var cox = getNodes(div);
+			// alert(cox.childNodes.length);
+			var newNode = cox.firstChild.cloneNode(true);
+			cox.appendChild(newNode);
+
+			function getNodes(element){
+				var pox = element.childNodes;
+				for(var i=0;i<pox.length;i++){
+					if(pox[i].nodeType==3 && /^\s+$/.test(pox[i].nodeValue)){
+						element.removeChild(pox[i]);
+					}
+				}
+				return element;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<p>html</p>
+		<p>js</p>
+		<p>css</p>
+	</div>
+</body>
+</html>

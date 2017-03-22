@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	// var b=undefined;
+	// b++;
+	// alert(b);
+	// function box(a){
+	// 	 return 2;
+	// 	alert(a);
+	// }
+	// alert(box());
+	// var b = new Object();
+	// b.name="haha";
+	// b.fun=box;
+	// alert(b.name);
+	// b.fun();
+	function s(num){
+		// if(num ==1){
+		// 	return 1;
+		// }else{
+		// 	return num+s(num-1);
+		// }
+		var sum = 0;
+		for(var i=1;i<=num;i++){
+			var sum = sum + i;
+		}
+		return sum;
+	}
+	alert(s(10));
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// for(var i =1;i<=5;i++){
+		// 	for(var j=1;j<=i;j++){
+		// 		document.write("*");
+
+		// 	}
+		// 	document.write("<br/>");//引号不能省
+		//}
+		// for(var i=1;i<=5;i++){
+		// 	if(i==3){
+		// 		break;
+		// 	}
+		// 	document.write(i)
+		// }
+		// for(var i =1;i<=5;i++){
+		// 	for(var j=1;j<=i;j++){
+		// 		if(j%3==0){
+		// 			break;
+		// 		}
+		// 	}
+		// 	document.write(j);
+		// }
+		flag:
+		for(var i =1;i<=5;i++){
+			for(var j=1;j<=i;j++){
+				if(j%3==0){
+					break flag;
+				}
+			}
+			document.write(j);
+		}
+	</script>
+</body>
+</html>

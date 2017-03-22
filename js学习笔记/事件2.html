@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// window.onload = function(){
+		// 	document.onclick = function(){
+		// 		alert("nihao");
+		// 	}	
+		// }
+		
+		// window.onload = function(){
+		// 	document.onclick = function(){
+		// 		alert(this);//[object HTMLDocument]
+		// 	}	
+		// }
+
+		// 绑定了就是这个对象
+		// window.onload = function(){
+		// 	document.onclick = box;	//[object HTMLDocument]
+		// }
+		// function box(){
+		// 	alert(this);
+		// }
+
+		//事件对象
+		window.onload = function(){
+			document.onmousedown = function(b){
+				// alert(window.event.button);这个IE支持
+				alert(getKeys(b));
+			};
+			function getKeys(b){
+				var a = b||window.event;//获取事件对象
+				var arr = [];
+				if(a.shiftKey){
+					arr.push("shift");
+				}
+				if(a.ctrlKey){
+					arr.push("ctrl");
+				}
+				if(a.altKey){
+					arr.push("alt");
+				}
+				return arr;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

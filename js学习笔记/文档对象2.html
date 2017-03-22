@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			//注意传参数要用引号
+			// var arr = document.getElementsByTagName("li");
+			// alert(arr);返回[object HTMLCollection]
+			// alert(arr.length);返回4这个是有的
+			// alert(arr[0]);返回[object HTMLLIElement]
+			// alert(arr.item(0));返回[object HTMLLIElement]
+
+			// var b = [2,3,54,54];
+			// alert(b.item(0));并没有这个方法
+			// alert(b[0]);
+
+			//得到所有标签方法
+			// 注意IE9以下的length多一个
+			var arr = document.getElementsByTagName("*");
+			// alert(arr.length);
+			// alert(arr[0]);[object HTMLHtmlElement]
+		}
+	</script>
+</head>
+<body>
+	<ul>
+		<li>html</li>
+		<li>js</li>
+		<li>css</li>
+		<li>jq</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var ss = "wattsadttajkwettratt";
+		// var box = ss.indexOf("tt");
+		// alert(box);//2
+		// var pox = ss.indexOf("tt",3);
+		// alert(pox);//7
+		// var kox = ss.lastIndexOf("tt");
+		// alert(kox);//18
+		// var kox = ss.indexOf("cc");
+		// alert(kox);-1
+		// var kox = ss.indexOf("tt",-1);
+		// alert(kox);-1可以找到返回2,100就找不到返回-1
+
+		// 邮箱的验证
+		var email = "xiaozonghanqq.c@om";
+		if(email.indexOf("@") >= 0){
+			if(email.indexOf("@")==email.lastIndexOf("@")){
+				if(email.indexOf("@")+1 < email.lastIndexOf(".")){
+					alert("有效邮箱");
+				}else{
+					alert("不合法");
+				}
+			}else{
+				alert("有多个@符号");
+			}	
+		}else{
+			alert("没有@符号");
+		}
+
+
+
+
+	</script>
+		
+</head>
+<body>
+	
+</body>
+</html>

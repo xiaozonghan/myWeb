@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			//呈现模式
+			// alert(document.compatMode);CSS1Compat
+			// alert(document.compatMode)BackCompat
+			// if(document.compatMode=="CSS1Compat"){
+			// 	alert(document.documentElement.clientWidth);
+			// }else{
+			// 	alert(document.body.clientWidth);
+			// }
+
+			// 实现立马看见滚动下面内容
+			var div = document.getElementsByTagName("div")[0];
+			// alert(div.scrollIntoView());
+
+			// 去掉空的子节点,与文本节点
+			alert(div.childNodes.length);
+			alert(div.children.length);
+			alert(div.children[0]);
+
+			// 是否包含子节点
+			var c = div.contains(div.children[0]);
+			alert(c);
+
+
+
+		}	
+	</script>
+</head>
+<body>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<p>qweqwer</p>
+	<div>
+		haha
+		<p></p>
+		<p></p>
+	</div>
+</body>
+</html>

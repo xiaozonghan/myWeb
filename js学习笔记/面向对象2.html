@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var obj = {
+		// 	// constructor:Student,
+		// 	country:"中国"
+		// };
+		// function Student(name,age){
+		// 	this.name = name;
+		// 	this.age = age;
+		// 	this.fun = function(){
+		// 		alert(this.name+this.age);
+		// 	};
+		// }
+		// Student.prototype.country = "中国";
+		// var box = new Object();
+		// // alert(box.country);undefined
+		// var pox = new Student("张三",44);
+		// // alert(pox.country);中国
+		// Student.prototype = obj;
+		// var cox = new Student("baba",54)
+		// alert(pox.constructor);//构造函数
+		// alert(cox.constructor)
+
+ 		// 构造函数加原型
+		// function Student(name,age){
+		// 	this.name = name;
+		// 	this.age = age;
+			
+		// }
+		// Student.prototype = {
+		// 	fun : function(){
+		// 		alert(this.name+this.age);
+		// 	}
+		// };
+
+		// 动态构造和原型，合并在一起
+		function Student(name,age){
+			this.name = name;
+			this.age = age;
+			if(typeof fun != function){
+				alert("kais");
+				Student.prototype.fun = function(){
+				return this.name+this.age;
+				};
+				alert("jiesu");
+			}
+			
+		} 
+
+
+		//寄生函数=工厂＋构造
+		function Box(name,age){
+			var obj =new Object();
+			obj.name = name;
+			obj.age = age;
+			obj.fun = function(){
+				return this.name + this.age;
+			}
+			return obj;
+		}
+		var pox = new Box;
+
+
+		//稳妥构造
+		function Box(name,age){
+			var obj = new Object()
+			obj.name = name;
+			obj.age = age;
+			obj.fun = function(){
+				return name + age; //不用this
+			}
+			return obj;
+		}
+		var pox = Box;//不用new
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

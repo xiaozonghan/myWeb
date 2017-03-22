@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var reg = /^book/ig;
+		// var str = " book";
+		// alert(reg.test(str));false
+
+		// var reg = /^book/ig;
+		// var str = "book";
+		// alert(reg.test(str));ture
+
+		// var reg = /^((hello css)|html)/ig;
+		// var str = "hello html";
+		// alert(reg.test(str));		
+
+		// var reg = /(.*?)\s(.*)/ig;
+		// var str = "he l lo h tm l";
+		// reg.test(str);
+		// alert(RegExp.$1);
+		// alert(str.replace(reg,"$1"));
+
+		var reg = /(html)\s(hello)/ig;
+		var str = "hello html";
+		alert(reg.test(str));
+		alert(RegExp.$1);
+		alert(str.replace(reg,"$1"));
+
+	</script>
+	
+	
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+			var box = document.getElementById("div1");
+			var pox = box.childNodes;
+			alert(pox.length);
+			alert(pox[4].nodeValue);
+			for(var i = 0; i < pox.length; i++){
+				if(pox[i].nodeType === 1){
+					alert(pox[i].nodeName);
+				}else if(pox[i].nodeType === 3){
+					alert(pox[i].nodeValue);
+				}
+			}
+		}
+		//最后一个不是文本节点自动加一个文本节点
+	</script>
+	
+</head>
+<body>
+<!-- 	<div id="div1">
+		你好啊
+		<b>大家好啊</b>
+		html啊
+		<em>jsjs与CSS</em>
+		文本节点下面没有空文本节点，注意最后一个不是文本节点就有误
+
+	</div> -->
+	<div id="div1">
+		你好啊
+		<b>大家好啊</b>
+		html啊
+		<em>jsjs与CSS</em>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// 获取HTML标签与body标签
+		// var html = document.documentElement;
+		// alert(html);[object HTMLHtmlElement]
+		// var body = document.body;
+		// alert(document.body);//注意一定要加载才能找到body
+		window.onload = function (){
+			// alert(document.body);[object HTMLBodyElement]
+			// var body = document.getElementsByTagName("body")[0];
+			// alert(body);[object HTMLBodyElement]
+
+			//文本的分离与合并
+			// var text1 = document.createTextNode("hello");
+			// var text2 = document.createTextNode(" world");
+			// body.appendChild(text1);
+			// body.appendChild(text2);
+			// body.normalize();
+			// alert(body.childNodes[0]);//文本节点
+			// alert(body.childNodes[1]);//div节点
+			// alert(body.childNodes[2]);//文本节点
+			// alert(body.childNodes.length);//3
+			// // 如果没有合并，那么将是5个子节点
+
+
+			var div = document.getElementsByTagName("div")[0];
+			// div.firstChild.splitText(4);
+			// alert(div.childNodes.length);//2
+
+			// div.firstChild.deleteData(2,4);
+			// alert(div.firstChild.nodeValue);
+			// //从第二位向后删除4位
+
+
+			var text = div.firstChild;
+			// text.insertData(2,"hello");
+			// alert(text);
+
+			// text.replaceData(2,4,"hi");
+			// alert(text);从第二位向后数4位;替换
+
+			// 以上4种直接改变原字符串
+
+
+			var pox = text.substringData(2,4);
+			// alert(text.nodeValue);原字符串不变
+			// alert(pox);向后数四位截取
+
+			var div = document.getElementById("div1");
+			// alert(div.firstChild);
+			// alert(div.childNodes.length);//3
+
+
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<!--zhusi-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		body{
+			background: #DEDEDE;
+			min-width: 750px;
+		}
+		header{
+			background-color: #333333;
+			height:80px;
+			width: 100%;
+
+			min-width: 700px;
+			overflow: auto;
+			/*display: table;
+			vertical-align: middle;*/
+		}
+		nav a img{
+			margin-left: 50px;
+			margin-top: 20px;
+			/*width: 100px;
+			height: 60px;*/
+			
+		}
+		nav ul{
+			float:right;
+			display: block;
+			
+
+		}
+		nav ul li{
+			float: left;
+			display: inline;
+			overflow: hidden;
+		}
+		nav ul li a{
+			/*float: ;*/
+			color:#fff;
+			margin-right: 20px;
+			line-height:80px; 
+			text-decoration: none;
+		}
+		nav ul li a:hover{
+			color:gray;
+		}
+		aside{
+			float: right;
+			margin-top: 20px;
+			margin-right: 20px;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 2px 2px 2px #848484;
+			width:350px;
+			min-width: 200px;
+		}
+		h4{
+			margin-top: 10px;
+			padding-left: 10px;
+			border-left: 3px solid #ccc ;
+			line-height: 36px;
+		}
+		form{
+			font-family: "微软雅黑";
+			/*font-weight: bold;*/
+		}
+		/*.email,.password{
+			padding-top: 10px;
+			margin-left:10px;
+		}
+		.email div,.password div{
+			display: inline-block;
+		}
+		.email input,.password input{
+			display: inline-block;
+			margin-left: 10px;
+			font-family: "微软雅黑";
+			font-weight: bold;
+		}
+		.email .demand{
+			/*text-align: right;*/
+			/*margin-right:100px;*/
+		/*	  font-size: 13px;
+              color: gray;
+              margin-left: 38%;
+              margin-top: 10px;
+		}*/
+	/*	.email{
+			width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  margin-bottom: 0px;
+		}
+		.password{
+			width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  }*/
+  /* .left1{
+width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  margin-bottom: 0px;
+   }
+   .right1{
+   	width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+   }*/
+
+	</style>
+</head>
+<body>
+	<header>
+	    <nav>
+	    	<a href="#">
+	    		<img src="../images/baidu.jpg" alt="baidu">
+	    	</a>
+	    	<ul>
+	    		<li><a href="#">导航链接1</a></li>
+	    		<li><a href="#">导航链接2</a></li>
+	    		<li><a href="#">导航链接3</a></li>
+	    		<li><a href="http://www.baidu.com">导航链接4</a></li>
+	    	</ul>
+	    </nav>
+	</header>
+	<aside>
+		<h4>这里以后是一个侧栏，这是侧栏的标题</h4>
+		<form action="http://www.baidu.com">
+		    <div class="email">
+				<div class="left1">请输入邮箱地址</div>
+				<input class="right1" type="text" placeholder="这是一个文本输入框"/>
+				<div class="right1">按要求输入格式</div>
+			</div>
+			 
+            <div class="password">
+            	<div class="left1">请输入密码</div>
+            	<input class="right1" type="password" pattern="[\w]{6,16}" placeholder="这是一个文本输入框" required  class="right1"/>
+            	<div class="left1">请重复输入密码</div>
+            	<input class="right1" type="password" pattern="[\w]{6,16}" placeholder="这是一个文本输入框" required  />
+            	<div class="right1">密码为6-16位英文数字</div>	
+            </div>
+            <div class="sex">
+            <div class="left1">性别</div>
+            <input type="radio" name="sex" id="man" chacked>
+            <lable for="man">男</lable>
+            <input type="radio" name="sex" id="woman" >
+            <lable for="woman">女</lable>
+ 			</div>
+ 			<div class="address">
+ 				<div class="left1">城市</div>
+ 				<select name="city" id="what">
+ 				    <option value="1" selected="">北京</option>
+ 				    <option value="2">武汉</option>
+ 				</select>
+ 			</div>
+ 			<div class="loving">
+ 				<div class="left1">爱好</div>
+ 				<input type="checkbox" name="love1" id="love1">
+ 				<lable for="love1">运动</lable>
+ 				<input type="checkbox" name="love2" id="love2">
+ 				<lable for="love2">运动</lable>
+ 				<input type="checkbox" name="love3" id="love3">
+ 				<lable for="love3">运动</lable>
+ 			</div> 
+ 			<div class="introduce">
+ 			    <div class="left1">
+ 			    	个人描述
+ 			    </div>
+ 			    <textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+ 			</div>
+ 			<div class="submit">
+ 				<input type="submit" value="确认提交"/>
+ 			</div>
+		</form>
+	</aside>
+	<span>1</span>
+	<div>1</div>
+	<!-- <div class="art1">
+	<h1 class="art2">这是标题一</h1>	
+	<h2 class="art3">这是标题二</h2>
+	<p class="art4">文章作者 文章时间</p>
+	<p class="art5">
+		我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，<b>加粗但我上进。我是前端</b>小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。换行。<br/>
+		我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。<a href="http://www.baidu.com">链接到百度</a>我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。
+	</p>
+	<img src="../images/c.jpg" alt="tupian" class="art6">
+	<p class="art7">
+		我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。我是前端小白，但我上进。
+	</p>
+	</div>
+	<div></div> -->
+</body>
+</html>

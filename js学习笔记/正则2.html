@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//正则的两种创建方式
+		// var reg = new RegExp("hello","ig");
+		// var reg = /hello/ig;
+
+		// 正则的两种使用方法 test exec
+		var reg = /llo/ig;
+		var str = "hello world 是llo llo llo ";
+		alert(reg.exec(str));//llo只返回一个
+		alert(typeof reg.exec(str));//数组方式返回
+		// alert(reg.exec(str).length);返回1
+
+		// test返回 true false
+
+		
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
