@@ -1,0 +1,41 @@
+div{
+	width:200px;
+	height:200px;
+}
+/*浮动特性：1浮动元素在同一排
+		  2内容撑开宽度
+		  3支持所有CSS样式
+		  4脱离文档流
+		  5提升层级半级*/
+#a{
+	background-color:maroon;
+	float:left;
+}
+#b{
+	background-color:green; 
+	/*margin-left:20px;*/
+	/*没有margin内容会在下面溢出*/
+	/*有margin文章出现在右侧*/
+	float:left;
+}
+#c{
+	background-color:blue;
+	float:left;
+}
+#d{
+	background-color:orange;
+	/*margin-top: 20px;*/
+	/*直接一起移动*/
+/*	margin的小性子：1第一个子级的margin-top带的父级一起移动
+					2兄弟之间margin-top与margin-bottom会叠压
+	解决问题一：1.父级加边框
+				2.给父级加overflow：hidden
+				3.不用margin-top，用父级padding-top*/
+								
+	margin-left:30px;
+}
+body{
+	/*border:1px solid red;*/
+	/*overflow:hidden;在这里没起到作用*/
+	padding-top:20px;
+}

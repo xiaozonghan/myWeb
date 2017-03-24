@@ -1,0 +1,40 @@
+/*body{
+	font-size: 50px;
+}*/
+/*字体所有都变大，行内元素盒模型取决内容*/
+
+
+
+/*div{
+	background-color:silver;
+	width:200px;
+	height:200px;*/
+	/*visibility:hidden;隐藏但是会占位置*/
+	/*visibility:visible;*/
+	/*visibility:collapse;只针对表格，对div和hidden一样效果*/
+/*}*/
+/*table tr:first-child{*/
+	/*选择器注意用法*/
+	/*visibility:hidden;隐藏但是会占位*/
+	/*visibility:collapse;隐藏不占位*/
+/*}*/
+
+
+/*div{*/
+	/*块级标签：1默认父级宽度100%，2支持所有css，3独占一行*/
+	/*行内标签：1同属性在一行，2内容撑开宽度，3不支持宽高上下padding，margin有怪异*/
+	            /*4代码换行被解析，大小取决于父级font-size*/
+	/*行内块：1同属性在一行，2内容撑开宽度，3支持所有CSS，4代码换行被解析            */
+	/*background-color: silver;
+	width:200px;
+	height:200px;*/
+	/*display:inline;*/
+	/*display:inline-block;*/
+	/*display:block;*/
+	/*display:none;隐藏不占位*/
+/*}*/
+
+
+
+
+

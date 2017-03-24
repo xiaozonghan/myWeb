@@ -1,0 +1,12 @@
+div{
+	width:200px;
+	height:200px;
+	/*border-style:solid;
+
+	border-color:red;
+	border-width:10px;*/
+	border:10px solid red;
+	/*border-top:10px dashed green;*/
+	/*border-radius:10px 200px 200px 200px;*/
+	border-radius: 100px;
+}
