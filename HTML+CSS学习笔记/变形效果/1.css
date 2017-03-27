@@ -1,0 +1,50 @@
+
+body{
+	margin:100px;
+}
+div{
+	width:200px;
+	height:200px;
+	background-color:silver;
+	box-shadow:2px 2px 2px gray;
+
+
+	/*平移效果*/
+	/*transform:translate(200px,200px);*/
+
+	/*设置一个像x轴*/
+	/*transform:translate(-60px);*/
+
+	/*也可以单独设置X和Y*/
+	/*transform:translateX(200px);*/
+
+
+	/*缩放效果*/
+	/*transform:scale(1.5);*/
+
+	/*transform:scale(1.5,0.5);*/
+
+	/*transform:scaleY(0.5);*/
+	/*transform:scaleX(0.5);*/
+
+
+	/*旋转效果*/
+	/*transform:rotate(45deg);*/
+
+	/*倾斜效果*/
+	/*transform:skew(0,45deg);*/
+
+	/*自定义矩形*/
+	/*transform:matrix();*/
+
+	/*定位中心*/
+	transform:rotate(45deg);
+	transform-origin:left top; 
+
+
+
+
+
+
+
+}
